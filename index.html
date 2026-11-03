@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jadwal Imam & Muadzin — STIT Al Wafi Bogor</title>
+<style>
+:root{--navy:#011f3f;--navy2:#123d68;--gold:#c79d3a;--ink:#142b45;--muted:#718096;--line:#e5eaf0;--bg:#f3f6fa;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink)}
+header{background:linear-gradient(115deg,#061b35,#123d68);color:#fff;padding:24px max(18px,calc((100% - 1320px)/2)) 66px}
+.brand{display:flex;align-items:center;gap:15px}.logo{width:52px;height:52px;border:2px solid var(--gold);border-radius:14px;display:grid;place-items:center;color:var(--gold);font-size:27px}.brand h1{font-size:23px;margin:0}.brand small{display:block;color:#d4dfeb;margin-top:5px}
+.wrap{max-width:1320px;margin:-42px auto 30px;padding:0 20px;position:relative}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:14px;background:#ffffffed;backdrop-filter:blur(12px);padding:15px 18px;border-radius:17px;box-shadow:0 8px 28px #0b254018;flex-wrap:wrap}
+.rolebox{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted)}select,button{font:inherit}select{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#fff;color:var(--navy);font-weight:650}
+main{margin-top:18px}.intro{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:22px 2px 15px}.eyebrow{font-size:11px;letter-spacing:1.4px;color:var(--gold);font-weight:800}.intro h2{margin:5px 0 0;font-size:27px;color:var(--navy)}.intro p{margin:5px 0 0;color:var(--muted);font-size:13px}
+.tabs{display:flex;gap:8px;margin:16px 0}.tab{border:1px solid #dbe3ec;background:white;color:var(--navy);padding:11px 18px;border-radius:12px;font-weight:750;cursor:pointer}.tab.active{background:var(--navy);color:#fff;border-color:var(--navy)}.tab:disabled{opacity:.4;cursor:not-allowed}
+.panel{background:white;border-radius:19px;padding:20px;box-shadow:0 7px 24px #0b254012;border:1px solid #edf0f4}
+.panelhead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-bottom:15px;border-bottom:1px solid var(--line)}.panelhead h3{margin:0;color:var(--navy);font-size:19px}.weeknav{display:flex;align-items:center;gap:8px}.weeknav button,.editbtn{border:1px solid #dce4ed;background:#fff;color:var(--navy);border-radius:9px;padding:9px 12px;font-size:12px;font-weight:700;cursor:pointer}.weeknav button:hover,.editbtn:hover{border-color:var(--gold);background:#fffaf0}
+.weeklabel{font-size:13px;font-weight:700;color:var(--navy);min-width:155px;text-align:center}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}.stat{background:#f5f7fa;border:1px solid #e9edf2;border-radius:13px;padding:13px 15px}.stat small{display:block;color:var(--muted);font-size:11px}.stat b{display:block;color:var(--navy);font-size:19px;margin-top:5px}
+.day{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:13px 0}.dayhead{background:#f3f6fa;padding:12px 15px;display:flex;justify-content:space-between;gap:10px;color:var(--navy);font-size:13px;font-weight:800}.dayhead span{color:var(--muted);font-weight:500}
+.entry{display:grid;grid-template-columns:155px 1fr 1fr auto;gap:13px;align-items:center;padding:14px 15px;border-top:1px solid var(--line)}
+.prayer{background:var(--navy);color:#fff;border-radius:11px;padding:13px;display:flex;justify-content:space-between;gap:8px;font-size:13px;font-weight:750}.prayer span:last-child{color:#f5dfad;white-space:nowrap}
+.person{display:flex;align-items:center;gap:10px;min-width:0}.avatar{width:42px;height:42px;flex:none;border-radius:50%;display:grid;place-items:center;background:#e8edf3;color:var(--navy);font-weight:800;font-size:13px}.person b{font-size:13px;line-height:1.3}.rolelabel{font-size:10px;letter-spacing:.7px;color:var(--muted);display:block;margin-bottom:3px}
+.person select{width:100%;min-width:0;font-size:12px;padding:8px}
+.notice{padding:12px 14px;border-radius:12px;background:#fff8e9;border:1px solid #f0dfb8;color:#74551b;font-size:12px;line-height:1.5;margin-top:14px}
+.hidden{display:none!important}footer{text-align:center;color:#8793a2;font-size:11px;padding:18px}
+@media(max-width:760px){header{padding:20px 16px 60px}.wrap{padding:0 12px}.entry{grid-template-columns:1fr 1fr;gap:10px;padding:12px}.prayer{grid-column:1/-1}.entry .editbtn{grid-column:1/-1}.intro h2{font-size:22px}.panel{padding:13px}.stats{gap:7px}.stat{padding:10px}.stat b{font-size:16px}.stat small{font-size:10px}.weeklabel{min-width:120px;font-size:11px}.weeknav button{padding:8px;font-size:11px}}
+:root{--navy:#0a192f;--navy2:#1e3a8a;--gold:#d4af37;--ink:#142b45;--muted:#718096;--line:#e2e8f0;--bg:#f4f7fb;--white:#fff}
+body{background:radial-gradient(ellipse at 12% 0%,#e8edf7 0,transparent 38%),var(--bg);font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink)}
+header{background:linear-gradient(135deg,#0a192f 0%,#172a45 62%,#1e3a8a 100%);padding:24px max(18px,calc((100% - 1320px)/2)) 66px;border-bottom:1px solid #d4af3760;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;width:310px;height:310px;border-radius:50%;right:7%;top:-235px;background:#d4af3726;filter:blur(12px);pointer-events:none}
+.brand{position:relative;z-index:1;gap:14px}.logo{width:52px;height:52px;border:1px solid #d4af3790;border-radius:16px;display:grid;place-items:center;background:#ffffff14;box-shadow:0 8px 24px #02081740;padding:7px}.logo img{width:100%;height:100%;object-fit:contain}.brand h1{font-size:21px;letter-spacing:-.35px}.brand small{color:#cbd5e1;font-size:12px;letter-spacing:.2px}
+.wrap{max-width:1320px;margin:-42px auto 30px;padding:0 20px;position:relative}.toolbar{background:#ffffffdf;border:1px solid #ffffff;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:15px 18px;border-radius:20px;box-shadow:0 16px 42px #0f172a12}.eyebrow{font-size:10px;letter-spacing:1.5px;color:#aa8010;font-weight:850}.rolebox{color:#64748b;font-size:12px;font-weight:600}select{border:1px solid #d8e0ea;border-radius:12px;padding:10px 12px;background:#fff;color:var(--navy);font-weight:650;box-shadow:0 2px 8px #0f172a08}
+main{margin-top:22px}.intro{margin:22px 2px 18px}.intro h2{font-size:29px;letter-spacing:-.7px}.intro p{font-size:13px}.tabs{gap:9px;margin:17px 0}.tab{border:1px solid #dce3ed;background:#fff;color:var(--navy);padding:11px 18px;border-radius:13px;font-weight:750;box-shadow:0 3px 10px #0f172a08;transition:.18s}.tab:hover:not(:disabled){transform:translateY(-1px);border-color:#d4af37}.tab.active{background:linear-gradient(135deg,#0a192f,#1e3a8a);color:#fff;border-color:#172a45;box-shadow:0 8px 18px #0a192f24}.panel{background:#ffffffeb;border-radius:22px;padding:22px;box-shadow:0 16px 42px #0f172a0d;border:1px solid #fff;backdrop-filter:blur(14px)}.panelhead{padding-bottom:16px}.panelhead h3{font-size:19px;letter-spacing:-.3px}.weeknav button,.editbtn{border:1px solid #dbe2eb;background:#fff;border-radius:11px;padding:9px 13px;transition:.18s}.weeknav button:hover,.editbtn:hover{border-color:var(--gold);background:#fffaf0;transform:translateY(-1px)}.weeklabel{font-size:12px}.stats{gap:13px;margin:18px 0}.stat{background:linear-gradient(145deg,#f8fafc,#f1f5f9);border:1px solid #e8edf3;border-radius:15px;padding:15px 16px}.stat small{font-size:11px}.stat b{font-size:20px;margin-top:6px}.day{border:1px solid #e5eaf0;border-radius:16px;margin:14px 0;box-shadow:0 3px 12px #0f172a05}.dayhead{background:linear-gradient(90deg,#f1f5f9,#f8fafc);padding:13px 16px;font-size:12px;letter-spacing:.4px}.entry{gap:14px;padding:15px 16px}.prayer{background:linear-gradient(135deg,#0a192f,#1e3a8a);border-radius:12px;padding:13px 14px;box-shadow:0 5px 12px #0a192f18}.prayer span:last-child{color:#f3e5ab}.avatar{background:#f3e5ab;color:#0a192f;border:1px solid #ead38a}.person b{font-size:13px}.person select{box-shadow:none}.rolelabel{font-size:9px;letter-spacing:.9px}.notice{padding:13px 15px;border-radius:13px;background:#fffbeb;border:1px solid #f1dfaa;color:#735619;font-size:12px}footer{color:#8793a2;font-size:11px;padding:20px}
+@media(max-width:760px){header{padding:20px 16px 60px}.wrap{padding:0 12px}.intro h2{font-size:23px}.panel{padding:14px;border-radius:18px}.stats{gap:7px}.stat{padding:11px 10px;border-radius:12px}.entry{grid-template-columns:1fr 1fr;gap:10px;padding:12px}.prayer{grid-column:1/-1}.weeknav{gap:5px}.weeknav button{padding:8px 9px}.dayhead{padding:11px 12px}}
+</style>
+</head>
+<body>
+<header><div class="brand"><div class="logo"><img src="logo-stit.png" alt="Logo STIT Al Wafi"></div><div><h1>STIT Al Wafi Bogor</h1><small>Sistem Jadwal Imam & Muadzin Mahasiswa</small></div></div></header>
+<div class="wrap">
+ <div class="toolbar">
+  <div><div class="eyebrow">AKSES APLIKASI</div><b id="accessTitle">Mode Admin</b></div>
+  <label class="rolebox">Simulasi role
+   <select id="roleSelect"><option value="admin">Admin</option><option value="ikhwan">User Ikhwan</option><option value="akhwat">User Akhwat</option></select>
+  </label>
+ </div>
+ <main>
+  <div class="intro"><div><div class="eyebrow">MASJID STIT AL WAFI BOGOR</div><h2>Jadwal Imam & Muadzin</h2><p id="subtitle">Admin dapat melihat dan mengelola jadwal Ikhwan maupun Akhwat.</p></div></div>
+  <div class="tabs" id="tabs"><button class="tab active" data-group="ikhwan">Jadwal Ikhwan</button><button class="tab" data-group="akhwat">Jadwal Akhwat</button></div>
+  <section class="panel">
+   <div class="panelhead"><h3 id="panelTitle">Jadwal Ikhwan</h3><div class="weeknav"><button id="prev">‹ Pekan</button><span class="weeklabel" id="weekLabel"></span><button id="next">Pekan ›</button></div></div>
+   <div class="stats"><div class="stat"><small>Mahasiswa terdaftar</small><b id="studentCount">20</b></div><div class="stat"><small>Hari bertugas</small><b>3 Hari</b></div><div class="stat"><small>Sesi per pekan</small><b>6 Sesi</b></div></div>
+   <div id="schedule"></div>
+   <div class="notice" id="accessNotice">Mode admin: Anda dapat mengganti penugasan imam dan muadzin. Satu mahasiswa tidak boleh menjadi imam dan muadzin pada sesi yang sama.</div>
+  </section>
+ </main>
+ <footer>Jadwal penugasan pekanan: Kamis, Jumat, dan Sabtu · Dzuhur dan Ashar</footer>
+</div>
+<script>
+const students={
+ ikhwan:["ABDUL QOWI FAWWAZ AL-ATSARI","ABDULLAH IBNUL MUBARAK","AFIF AHMAD MUFLIH EL HASSAN","AHMAD HASSAAN SUGITAHARI","AHMAD ZAID ABDUR ROUF","DRASTHYA RAFA ADHITIAWAN","MUHAMMAD CAESAR ALMAYDA WIRA","MUHAMMAD ERSADY RIVAI","MUHAMMAD LUTFIR AMIN RAHMAN","WINARNOKO","FERDINAN FAWWAZ IMANULLAH","FARRELINO ACHMAD DARIEF","RAFIF MUAFA ADDARUQUTHNI","IHSAN AL MUNIR BL","MUHAMMAD IZZARDA IZHARULHAQ","MUHAMMAD IRSYAD","MUHAMMAD AFFAN","IQBAL ABDUL GHANI","SAEPUL MUNAWAR RIZAL","MUHAMMAD FADHIL IZZAZ DZAKIRAH"],
+ akhwat:["BALQIS ZERLINDA CIPUTRI","INDAH PURNAMA SARI","KHONSA' ABDURROCHMAN","MIFTAH NUR AZIZAH","MUDRIKAH ZAIN","MUTHIA NABILA HUSNA","OCTAVIA ZULKARNAEN","RAYYA RIFKAH FALIHAH","SITI NAMIRA UQBA HASANAH","ALYA LUTFIA MUMTAZ","ANNISA UL KARIMAH","MUFIDAH","NADZMINA AL KHALIFI HUMAIRA","HALIZA SOFIE AMALIA","TALITA HASNA AZIZAH SALSABILA","SHAFA KHALIDA","SYAHIDAH RABIYATUN NISA","LIA APRIYANI","AISYAH","YULI EKA OKTAFIANI"]
+};
+const schedules={
+ ikhwan:[
+  {day:"KAMIS",sessions:[["Dzuhur","11:40",0,1],["Ashar","14:55",2,3]]},
+  {day:"JUMAT",sessions:[["Dzuhur","11:40",4,5],["Ashar","14:55",6,7]]},
+  {day:"SABTU",sessions:[["Dzuhur","11:40",8,9],["Ashar","14:55",10,11]]}
+ ],
+ akhwat:[
+  {day:"KAMIS",sessions:[["Dzuhur","11:40",0,1],["Ashar","14:55",2,3]]},
+  {day:"JUMAT",sessions:[["Dzuhur","11:40",4,5],["Ashar","14:55",6,7]]},
+  {day:"SABTU",sessions:[["Dzuhur","11:40",8,9],["Ashar","14:55",10,11]]}
+ ]
+};
+let role="admin",group="ikhwan",weekOffset=0;
+const $=id=>document.getElementById(id);
+function initials(n){return n.split(/\s+/).slice(0,2).map(x=>x[0]).join("")}
+function dateAt(dayOffset){let d=new Date();d.setHours(12,0,0,0);let monday=(d.getDay()+6)%7;d.setDate(d.getDate()-monday+3+dayOffset+weekOffset*7);return d}
+function formatDate(d){return new Intl.DateTimeFormat("id-ID",{day:"numeric",month:"long",year:"numeric"}).format(d)}
+function render(){
+ const data=schedules[group], list=students[group];$("panelTitle").textContent="Jadwal "+(group==="ikhwan"?"Ikhwan":"Akhwat");
+ $("studentCount").textContent=list.length;
+ $("weekLabel").textContent=`${formatDate(dateAt(0))} – ${formatDate(dateAt(2))}`;
+ $("accessTitle").textContent=role==="admin"?"Mode Admin":role==="ikhwan"?"Akses Mahasiswa Ikhwan":"Akses Mahasiswi Akhwat";
+ $("subtitle").textContent=role==="admin"?"Admin dapat melihat dan mengelola jadwal Ikhwan maupun Akhwat.":role==="ikhwan"?"Anda hanya dapat melihat jadwal Ikhwan.":"Anda hanya dapat melihat jadwal Akhwat.";
+ $("accessNotice").textContent=role==="admin"?"Mode admin: Anda dapat mengganti penugasan imam dan muadzin. Sistem produksi perlu memvalidasi agar satu mahasiswa tidak mendapat lebih dari satu tugas dalam satu hari.":"Mode pengguna: jadwal hanya dapat dilihat dan tidak dapat diubah.";
+ $("schedule").innerHTML=data.map((day,i)=>`<div class="day"><div class="dayhead">${day.day}<span>${formatDate(dateAt(i))}</span></div>${day.sessions.map((s,j)=>entryHTML(s,i,j,list)).join("")}</div>`).join("");
+}
+function entryHTML(s,di,si,list){
+ const [name,time,ii,mi]=s, editable=role==="admin";
+ const person=(idx,type)=>editable?`<div class="person"><div class="avatar">${initials(list[idx])}</div><div style="min-width:0;flex:1"><span class="rolelabel">${type}</span><select aria-label="${type}" onchange="changeAssignment(${di},${si},'${type}',this.value)">${list.map((n,k)=>`<option value="${k}" ${k===idx?"selected":""}>${n}</option>`).join("")}</select></div></div>`:`<div class="person"><div class="avatar">${initials(list[idx])}</div><div><span class="rolelabel">${type}</span><b>${list[idx]}</b></div></div>`;
+ return `<div class="entry"><div class="prayer"><span>${name}</span><span>${time} WIB</span></div>${person(ii,"IMAM")}${person(mi,"MUADZIN")}</div>`;
+}
+window.changeAssignment=(di,si,type,value)=>{
+ const s=schedules[group][di].sessions[si], idx=Number(value);
+ if(type==="IMAM"&&idx===s[3] || type==="MUADZIN"&&idx===s[2]){alert("Imam dan muadzin harus mahasiswa yang berbeda.");render();return}
+ s[type==="IMAM"?2:3]=idx;render();
+};
+function setRole(next){
+ role=next;
+ if(role==="ikhwan")group="ikhwan";
+ if(role==="akhwat")group="akhwat";
+ $("tabs").classList.toggle("hidden",role!=="admin");
+ document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.group===group));
+ $("roleSelect").value=role;render();
+}
+$("roleSelect").addEventListener("change",e=>setRole(e.target.value));
+document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{group=b.dataset.group;document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===b));render()}));
+$("prev").onclick=()=>{weekOffset--;render()};$("next").onclick=()=>{weekOffset++;render()};
+render();
+</script>
+</body></html>
